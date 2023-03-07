@@ -1,4 +1,6 @@
 sudo apt install neovim -y
+sudo apt-get install xclip
+
 
 mkdir -p ~/.config/nvim
 
