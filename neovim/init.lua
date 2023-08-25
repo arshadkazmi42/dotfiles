@@ -7,6 +7,11 @@ if vim.fn.empty(vim.fn.glob(install_path)) > 0 then
   vim.cmd [[packadd packer.nvim]]
 end
 
+local set = vim.opt -- set options
+set.tabstop = 2
+set.softtabstop = 2
+set.shiftwidth = 2
+
 require('packer').startup(function(use)
   -- Package manager
   use 'wbthomason/packer.nvim'
@@ -391,7 +396,11 @@ mason_lspconfig.setup_handlers {
 }
 
 -- Turn on lsp status information
-require('fidget').setup()
+require('fidget').setup {
+  options = {
+    tag = 'legacy'
+  },
+}
 
 -- nvim-cmp setup
 local cmp = require 'cmp'
