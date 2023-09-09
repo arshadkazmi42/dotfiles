@@ -11,6 +11,8 @@ Personal dotfiles
   - Copy .p10k.zsh.{{OS}} to your home directory `~/.p10k.zsh`
   - Restart terminal
 - [tmux.conf](https://github.com/arshadkazmi42/dotfiles/blob/main/tmux.conf): Tmux configuration
-  - Copy this file to `~/.config/tmux/tmux.conf`
+  - Install `tpm` using `git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm`
+  - Copy `tmux.conf` file to `~/.config/tmux/tmux.conf`
+  - Source the tmux file `tmux source ~/.config/tmux/tmux.conf`
   - Install [tpm](https://github.com/tmux-plugins/tpm)
   - In tmux terminal run `CTRL + B + I` to install all the plugins
