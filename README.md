@@ -15,4 +15,4 @@ Personal dotfiles
   - Copy `tmux.conf` file to `~/.config/tmux/tmux.conf`
   - Source the tmux file `tmux source ~/.config/tmux/tmux.conf`
   - Install [tpm](https://github.com/tmux-plugins/tpm)
-  - In tmux terminal run `CTRL + B + I` to install all the plugins
+  - In tmux terminal run `CTRL + b + I` to install all the plugins
